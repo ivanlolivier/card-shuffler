@@ -86,7 +86,7 @@ class QuestionCardsApp {
     card.className = "card";
     card.innerHTML = `
             <div class="card-inner">
-                <div class="card-face">Hidden Question</div>
+                <div class="card-face">Hidden Question ${index + 1}</div>
                 <div class="card-face card-back">${question}</div>
             </div>
         `;
