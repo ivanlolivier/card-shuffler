@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Question Definition Screen -->
+      <div id="definition-screen" class="screen">
+        <h1>Create Your Questions</h1>
+        <form id="question-form">
+          <div id="question-input-container">
+            <input
+              type="text"
+              id="question-input"
+              placeholder="Enter your question"
+              required
+              maxlength="100"
+            />
+            <div><span id="text-length">0</span> / 100</div>
+          </div>
+          <button type="submit">Add Question</button>
+        </form>
+        <ul id="questions-list"></ul>
+        <button id="proceed-btn" class="proceed-btn" disabled>
+          Proceed to Cards
+        </button>
+      </div>
+
+      <!-- Main Screen -->
+      <div id="main-screen" class="screen hidden">
+        <h1>Question Cards</h1>
+        <button id="shuffle-btn" class="shuffle-btn">Shuffle Cards</button>
+        <div id="cards-container"></div>
+        <button id="back-btn" class="back-btn">Back to Questions</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
